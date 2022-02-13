@@ -38,11 +38,11 @@
 
         <section class="item-input w-50 mx-auto py-5">
             <div class="input-group input-group-lg mt-3">
-                        <span class="input-group-text " id="inputGroup-sizing-lg">Name</span>
+                        <span class="input-group-text " id="inputGroup-sizing-lg">Items Name</span>
                         <input type="text" id="input-name" class="form-control " placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
             </div>
             <div class="input-group input-group-lg  mt-3">
-                <span class="input-group-text " id="inputGroup-sizing-lg">Price</span>
+                <span class="input-group-text " id="inputGroup-sizing-lg">Items Price</span>
                 <input type="text" id="input-price" class="form-control " placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
             </div>
             <div class="input-group input-group-lg  mt-3 ">
@@ -56,7 +56,7 @@
         </section>
 
         <div class="w-50 mx-auto pb-5">
-            <marquee behavior="left" direction="left" class="text-danger fw-bold fs-5 pb-3" >You can add more items using input field </marquee>
+            <marquee behavior="" direction="left" class="text-danger fw-bold fs-5 pb-3" >You can add more items using input field </marquee>
         </section>
 
 
@@ -71,7 +71,7 @@
                   <div class="card ">
                     <div class="card-body " style="height: 250px;">
                       <h5 class="card-title">Date </h5>
-                      <p class="card-text" id="show-date"></p>
+                      <p class="card-text fw-bold" ><span id="show-date"></span></p>
                     </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@
                   <div class="card">
                     <div class="card-body " style="height: 250px;">
                       <h5 class="card-title">Invoice to</h5>
-                      <p class="card-text" id="show-invoice"></p>
+                      <p class="card-text fw-bold" id="show-invoice"></p>
                     </div>
                   </div>
                 </div>
@@ -87,7 +87,10 @@
                     <div class="card ">
                       <div class="card-body" style="height: 250px;">
                         <h5 class="card-title">Seller</h5>
-                        <p class="card-text" id="show-seller"></p>
+                        <p class="card-text fw-bold" id="show-seller">
+                            niloy-web-development.org <br>
+                            niloyadityadeyce@gmail.com 
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -97,19 +100,24 @@
                 <table class="table  ">
                     <thead>
                       <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Items</th>
+                        <th scope="col">Items Name</th>
+                        <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Total</th>
                       </tr>
                     </thead>
-                    <tbody id="add-td">
-                      
+                    <tbody id="add-table-data">
+                        <!-- <tr>
+                            <td>niloy</td>
+                            <td>500</td>
+                            <td>5</td>
+                            <td>400</td>
+                        </tr> -->
                     </tbody>
 
                     <tbody>
                         <tr>
-                            <td colspan="3" class="text-end fw-bold">SubTotal</td>
+                            <td  colspan="3" class="text-end fw-bold">SubTotal</td>
                             <td class="text-right" >$<span id="sub-total">0</span></td>
                         </tr>
                         <tr>
@@ -133,8 +141,8 @@
                             <div class="color-4 p-3 h-100 rounded">
                                 <span class='text-warning fw-bold'>Bank Transfer</span> <br>
                                 <span class="text-white">
-                                    Account Name: Sagar Biswas
-                                    Account Number:1234567890934
+                                    Account Name: Niloy dey <br>
+                                    Account Number:1234567890934 <br>
                                     Code: 231231231212312
                                 </span>
                             </div>
@@ -164,12 +172,6 @@
             All rights niloy dey
         </p>
     </footer>
-
-
-
-
-
-
 
 
     <!-- Custom js flie link -->
